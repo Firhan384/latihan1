@@ -1,0 +1,156 @@
+/* inisialisasi */
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../font/FontsFree-Net-SFProDisplay-Regular.ttf");
+}
+
+/* navbar */
+.navbar {
+  margin-top: 50px;
+}
+
+.navbrand-items {
+  font-family: SFProDisplay;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #303031;
+}
+
+.navbrand-items span {
+  margin-right: 40px;
+}
+
+.navbrand-items span a {
+  color: #303031;
+  text-decoration: none;
+}
+
+.navbrand-items span a:hover {
+  color: #71a89e;
+}
+
+/* jumbroton */
+.jumbroton__banner {
+  font-family: SFProDisplay;
+  color: #22322f;
+  margin-top: 97px;
+}
+.wrapper__content__jumbroton {
+  display: flex;
+  justify-content: space-between;
+}
+h1.title {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+p.deskripsi {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+.button-primary {
+  background: #71a89e;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: white;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.information__produk {
+  margin-top: 154px;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 768px) {
+  /* dekstop */
+  .navbrand-mobile {
+    display: none;
+  }
+  .image__produk {
+    /* background-color: lightcoral; */
+    margin-top: -220px;
+    width: 617px;
+    height: 664px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* mobile */
+  .navbrand-title {
+    width: 79px;
+    height: 25px;
+  }
+  h1.title {
+    font-size: 27px;
+    line-height: 43px;
+  }
+  p.deskripsi {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+  }
+  .button-primary {
+    width: 200px;
+    height: 44px;
+    background: #71a89e;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px 24px;
+    /* text */
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .navbrand-items {
+    display: none;
+  }
+  .navbrand-mobile {
+    width: 98px;
+    height: 38px;
+    background: #f9f9f9;
+    border: 1px solid #22322f;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 9px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbrand-mobile .icon {
+    background-image: url(../image/Group\ 2582.png);
+    width: 11.22px;
+    height: 11.27px;
+  }
+  .navbrand-mobile .text {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  /* jumbroton */
+  .jumbroton__banner {
+    margin-top: -47px;
+  }
+  .wrapper__content__jumbroton {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .information__produk {
+    margin-top: 48px;
+  }
+  .image__produk img {
+    width: 100%;
+    height: 100%;
+  }
+}
